@@ -1,166 +1,144 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>عداد احترافي</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مشاهدة فيديوهات دينية قصيرة | قناة الدعوة إلى الخير</title>
+
+  <!-- ✅ وصف يظهر في نتائج البحث -->
+  <meta name="description" content="شاهد أجمل الفيديوهات الدينية القصيرة: أذكار، أدعية، تلاوات قرآنية، مواعظ دينية، نصائح إسلامية، وفيديوهات دعوية من قناة الدعوة إلى الخير.">
+
+  <!-- ✅ كلمات مفتاحية قوية -->
+  <meta name="keywords" content="فيديوهات دينية, قناة اسلامية, أذكار, أدعية, تلاوة قرآنية, اسلام, أحاديث نبوية, دعاء, موعظة, إيمان, ذكر الله, لا إله إلا الله, محمد رسول الله, التوحيد, الصدقة, بر الوالدين, الجنة, النار, قصص الأنبياء, تفسير القرآن, تعليم الصلاة, اذكار الصباح, اذكار المساء, أدعية يومية, خطب اسلامية, مقاطع مؤثرة, اسلاميات, دعوة إلى الخير, فيديوهات دعوية, فيديو اسلامي قصير, shorts اسلامية, فيديو يوتيوب اسلامي, فيديو ديني قصير, مقاطع اسلامية قصيرة, فيديو مؤثر, حكم اسلامية, عبر اسلامية, السنة النبوية, سنة الرسول, قصص الصحابة, مواعظ ايمانية, محاضرات اسلامية, تذكير بالله, قيام الليل, الدعاء المستجاب, اذكار النوم, اذكار بعد الصلاة, فضل الذكر, تلاوة جميلة, قراء مؤثرين, دعاء قصير, أدعية مستجابة, islamic video, islamic reminder, quran recitation, dua, dhikr, hadith, prophet stories, paradise, hell, islamic motivation, faith, Allah, Muhammad, Islamic shorts, muslim channel, Islamic advice, daily dua, Quran quotes, hadith quotes, salah, prayer, forgiveness, istighfar, سبحان الله, الحمد لله, الله أكبر, استغفر الله, لا حول ولا قوة إلا بالله, اللهم صل وسلم على محمد">
+
+  <!-- OG Tags -->
+  <meta property="og:title" content="فيديوهات دينية قصيرة | قناة الدعوة إلى الخير">
+  <meta property="og:description" content="مشاهدة أجمل الأذكار والتلاوات القرآنية والأدعية القصيرة.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://keziouzeyd0-wq.github.io/Tasbih/">
+  <meta property="og:image" content="https://i.postimg.cc/BQ8HfV1H/Screenshot-2025-10-01-11-09-52-50-06d0f9554a0a05ce054ef8d232e87828.jpg">
+
   <style>
-    /* خلفية متدرجة */
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      text-align: center;
+      font-family: "Segoe UI", Tahoma, Arial;
+      background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+      color: #fff;
       margin: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: linear-gradient(135deg, #667eea, #764ba2);
-    }
-
-    /* الصندوق الرئيسي */
-    .container {
-      background: #fff;
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-      width: 350px;
-      animation: fadeIn 0.6s ease-in-out;
-    }
-
-    h1 {
-      font-size: 60px;
-      margin-bottom: 30px;
-      color: #333;
-    }
-
-    /* الأزرار */
-    button {
-      font-size: 18px;
-      padding: 12px 25px;
-      margin: 10px;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    button:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
-
-    .increment {
-      background-color: #4CAF50;
-      color: white;
-    }
-    .reset {
-      background-color: #f44336;
-      color: white;
-    }
-
-    /* النافذة المنبثقة */
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 1000;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0,0,0,0.6);
-      justify-content: center;
-      align-items: center;
-      animation: fadeIn 0.3s ease-in-out;
-    }
-
-    .modal-content {
-      background: #fff;
-      padding: 25px;
-      border-radius: 15px;
+      padding: 0;
       text-align: center;
-      width: 320px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-      animation: zoomIn 0.3s ease-in-out;
     }
-
-    .modal-content h2 {
-      margin-bottom: 20px;
-      color: #333;
+    header {
+      background: linear-gradient(to right, #009688, #004d40);
+      color: white;
+      padding: 20px;
+      box-shadow: 0 0 20px #00ffcc;
     }
-
-    .modal-buttons {
+    h1 {
+      margin: 0;
+      font-size: 26px;
+      text-shadow: 0 0 10px #00ffc3, 0 0 20px #00ffc3;
+    }
+    .video-container {
       display: flex;
-      justify-content: space-around;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
     }
-
-    .confirm {
-      background-color: #4CAF50;
+    iframe {
+      width: 300px;
+      height: 500px;
+      border-radius: 10px;
+      border: none;
+      box-shadow: 0 0 15px #00ffc3;
+      transition: transform 0.3s;
+    }
+    iframe:hover {
+      transform: scale(1.05);
+    }
+    .seo-section {
+      background: rgba(255,255,255,0.1);
+      padding: 30px;
+      margin: 20px;
+      border-radius: 15px;
+      text-align: right;
+      line-height: 1.8;
+      box-shadow: 0 0 20px rgba(0,255,200,0.3);
+    }
+    .seo-section h2 {
+      color: #00ffc3;
+      text-shadow: 0 0 8px #00ffc3;
+    }
+    footer {
+      background: #004d40;
       color: white;
+      padding: 15px;
+      margin-top: 20px;
+      box-shadow: 0 0 15px #00ffc3;
     }
-    .cancel {
-      background-color: #f44336;
-      color: white;
-    }
-
-    /* حركات */
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    @keyframes zoomIn {
-      from { transform: scale(0.8); opacity: 0; }
-      to { transform: scale(1); opacity: 1; }
+    footer a {
+      color: #ffeb3b;
+      text-decoration: none;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1 id="counter">0</h1>
-    <button class="increment" onclick="increment()">➕ زيادة</button>
-    <button class="reset" onclick="showModal()">🔄 تصفير</button>
-  </div>
 
-  <!-- النافذة المنبثقة -->
-  <div id="resetModal" class="modal">
-    <div class="modal-content">
-      <h2>هل تريد التصفير من جديد؟</h2>
-      <div class="modal-buttons">
-        <button class="confirm" onclick="confirmReset()">✅ نعم</button>
-        <button class="cancel" onclick="closeModal()">❌ إلغاء</button>
-      </div>
-    </div>
-  </div>
+  <header>
+    <h1>📖 قناة الدعوة إلى الخير | فيديوهات دينية قصيرة</h1>
+    <p>أذكار، أدعية، تلاوات قرآنية، مواعظ إيمانية</p>
+  </header>
 
-  <script>
-    let count = localStorage.getItem("counterValue") 
-                ? parseInt(localStorage.getItem("counterValue")) 
-                : 0;
+  <main>
+    <section class="video-container">
+      <!-- ✅ فيديوهات -->
+      <iframe src="https://www.youtube.com/embed/7dPA3nuNEJc" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/eyfzaUPRgZw" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/HaI7p6X1q5s" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/8eMNvyoeMus" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/6qAPyLi4R00" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/zYTXCEv4JzA" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/-K93KYUCpzA" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/kev4IDrnEA4" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/jmz_kg58UsQ" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/Iuzlgr3Ekh0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/73ItFYmM8Pw" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/7sbuDu7ufKk" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/1bFZnGr5rcE" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/6xIrYGKYub8" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/xpeyQhxyfgA" allowfullscreen></iframe>
+    </section>
 
-    const counterElement = document.getElementById("counter");
-    counterElement.textContent = count;
+    <!-- ✅ قسم SEO نصي -->
+    <section class="seo-section">
+      <h2>أفضل الفيديوهات الدينية القصيرة</h2>
+      <p>
+        مرحبًا بك في <strong>قناة الدعوة إلى الخير</strong>، حيث تجد مجموعة من
+        <strong>الفيديوهات الدينية القصيرة</strong> التي تساعدك على تذكر الله
+        في كل وقت. نقدم لك <strong>أذكار الصباح والمساء</strong>،
+        <strong>أدعية مستجابة</strong>، <strong>تلاوات قرآنية مؤثرة</strong>،
+        ومواعظ دينية تعزز <strong>الإيمان والتقوى</strong>.
+      </p>
+      <p>
+        ستجد هنا أيضًا <strong>قصص الأنبياء</strong>، <strong>أحاديث نبوية</strong>،
+        <strong>محاضرات قصيرة</strong>، و<strong>مقاطع مؤثرة</strong> تساعدك
+        على التقرب من الله. يمكنك متابعة
+        <strong>اذكار النوم</strong>، <strong>اذكار بعد الصلاة</strong>،
+        <strong>قيام الليل</strong>، و<strong>الدعاء المستجاب</strong>.
+      </p>
+      <p>
+        هدفنا نشر <strong>الإسلام</strong> و<strong>السنة النبوية</strong>
+        بأسلوب عصري عبر <strong>Shorts إسلامية</strong> سهلة المشاهدة والمشاركة.
+        انضم إلينا وشارك الأجر عبر نشر هذه <strong>الفيديوهات الدعوية</strong>.
+      </p>
+    </section>
+  </main>
 
-    function increment() {
-      count++;
-      counterElement.textContent = count;
-      localStorage.setItem("counterValue", count);
-    }
+  <footer>
+    <p>© 2025 قناة الدعوة إلى الخير | جميع الحقوق محفوظة</p>
+    <p><a href="https://youtube.com/@da3wa_khir" target="_blank">📺 زر قناتنا على يوتيوب</a></p>
+  </footer>
 
-    function showModal() {
-      document.getElementById("resetModal").style.display = "flex";
-    }
-
-    function closeModal() {
-      document.getElementById("resetModal").style.display = "none";
-    }
-
-    function confirmReset() {
-      count = 0;
-      counterElement.textContent = count;
-      localStorage.setItem("counterValue", count);
-      closeModal();
-      // رسالة صغيرة بعد التصفير
-      setTimeout(() => alert("✅ تم التصفير بنجاح!"), 200);
-    }
-  </script>
 </body>
 </html>
